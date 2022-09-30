@@ -240,12 +240,77 @@ margin-left: 10px;
 background-color: rgb(235, 232, 222);
 display: grid;
 place-content: center;
-padding: 10% 10%;
+padding: 40px 0;
+text-align: center;
 }
 
-.testimonials img {
-height: 100px;
+.inner {
+max-width: 100%;
+margin: auto;
+overflow: hidden;
+padding: 0 20px;
 }
+
+.border {
+width: 160px;
+height: 5px;
+margin: 26px auto;
+}
+
+.row {
+justify-content: center;
+display: flex;
+flex-wrap: wrap;
+}
+
+.col {
+padding: 10px;
+}
+
+.name {
+color: rgb(1, 1, 0);
+font-family: 'Barlow Semi Condensed', sans-serif;
+text-transform: none;
+font-size: 18px;
+font-weight: bold;
+}
+
+.testimonials p {
+font-family: 'Poppins', sans-serif;
+font-size: 0.7rem;
+padding: 2% 5% 2% 5%;
+}
+
+.occupation {
+color: rgb(196, 140, 72);
+font-family: 'Barlow Semi Condensed', sans-serif;
+text-transform: uppercase;
+font-size: 14px;
+}
+
+.stars {
+color: rgb(196, 140, 72);
+}
+
+.testimonial {
+background-color: #ffffff;
+padding: 30px;
+border-radius: 0.5em;
+display: flex;
+
+}
+
+.testimonial img {
+height: 100px;
+width: 100px;
+border-radius: 100%;
+object-fit: cover;
+}
+
+.text {
+display: flex;
+}
+
 
 .recensioner h2 {
 color: rgb(191, 146, 91);
