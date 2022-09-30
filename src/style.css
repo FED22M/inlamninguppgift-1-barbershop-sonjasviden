@@ -28,6 +28,7 @@ display: flex;
 position: fixed;
 opacity: 0.7;
 width: 100%;
+z-index: 2;
 }
 
 ul {
@@ -44,7 +45,6 @@ color: #ffffff;
 text-decoration: none;
 font-family: 'Barlow Semi Condensed', sans-serif;
 font-size: 15px;
-
 }
 
 a:hover {
@@ -238,17 +238,8 @@ margin-left: 10px;
 
 .testimonials {
 background-color: rgb(235, 232, 222);
-display: grid;
-place-content: center;
 padding: 40px 0;
 text-align: center;
-}
-
-.inner {
-max-width: 100%;
-margin: auto;
-overflow: hidden;
-padding: 0 20px;
 }
 
 .border {
@@ -261,13 +252,39 @@ margin: 26px auto;
 justify-content: center;
 display: flex;
 flex-wrap: wrap;
+flex-direction: row-reverse;
 }
 
 .col {
 padding: 10px;
 }
 
+.testimonials p {
+font-family: 'Poppins', sans-serif;
+font-size: 0.7rem;
+padding: 2% 5% 2% 5%;
+text-align: left;
+float: left;
+
+}
+
+.samling {
+margin-left: 20%;
+height: 50%;
+width: auto;
+margin-top: -30px;
+}
+
+.stars {
+color: rgb(196, 140, 72);
+text-align: left;
+margin-top: 120px;
+}
+
 .name {
+margin: 2% 20% 3% 0%;
+padding-right: 50px;
+display: inline-block;
 color: rgb(1, 1, 0);
 font-family: 'Barlow Semi Condensed', sans-serif;
 text-transform: none;
@@ -275,42 +292,32 @@ font-size: 18px;
 font-weight: bold;
 }
 
-.testimonials p {
-font-family: 'Poppins', sans-serif;
-font-size: 0.7rem;
-padding: 2% 5% 2% 5%;
-}
-
 .occupation {
+display: inline-block;
 color: rgb(196, 140, 72);
 font-family: 'Barlow Semi Condensed', sans-serif;
 text-transform: uppercase;
 font-size: 14px;
-}
-
-.stars {
-color: rgb(196, 140, 72);
+margin-right: 112px;
 }
 
 .testimonial {
 background-color: #ffffff;
 padding: 30px;
 border-radius: 0.5em;
-display: flex;
-
+height: 170px;
 }
 
 .testimonial img {
+margin-top: 2px;
+padding-left: 0;
 height: 100px;
 width: 100px;
 border-radius: 100%;
 object-fit: cover;
+float: left;
+margin-top: 15px;
 }
-
-.text {
-display: flex;
-}
-
 
 .recensioner h2 {
 color: rgb(191, 146, 91);
@@ -328,9 +335,10 @@ text-align: center;
 font-size: 2rem;
 }
        
-
-
-* {
-margin: 0;
-padding: 0;
+.quote {
+margin-left: -260px;
+margin-bottom: -30px;
+height: 50px;
+z-index: 1;
 }
+
