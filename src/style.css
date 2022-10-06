@@ -445,8 +445,17 @@ button {
 
   @media screen and (max-width: 600px) {
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
   .navbar a:not(:first-child) {
    display: none;
+   }
+
+   .navbar {
+    width: 100%;
    }
 
   .navbar a.icon {
@@ -478,12 +487,23 @@ button {
    align-items: flex-start;
    }
 
+   .banner-text {
+    margin: 0;
+    padding: 0;
+    width: 70%;
+   }
+
+   .banner-text p {
+    width: 350px;
+   }
+
   .banner-text h2 {
    margin-left: 15px;
    }
 
   .banner-text h3 {
    margin-left: 15px;
+   width: 300px;
    } 
 
   button {
@@ -497,7 +517,7 @@ button {
    }      
 
   .card {
-   height: 45vh;
+   height: 60vh;
    display: inline-block;
    }
       
@@ -574,7 +594,8 @@ button {
 
   .container p {
    font-size: 0.8rem;
-   padding: 2% 5% 2% 5%;
+   padding: 5% 0% 5% 5%;
+   width: 85%;
    }
       
   .kalender {
@@ -624,19 +645,15 @@ button {
    }
     
   .testimonials .box {
-   position: relative;
-   padding: 80px 40px 40px;
-   text-align: center;
-   flex-direction: row-reverse;
-   flex-wrap: wrap;
-   width: 81%;
+   width: 250px;
    }
 
   .testimonials-boxes {
    grid-gap: 50px;
    box-sizing: border-box;
-   padding: 30px;
+   padding: 0px;
    display: grid;
+   margin-right: 0;
    }
 
   .footer {
